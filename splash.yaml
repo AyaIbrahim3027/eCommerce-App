@@ -1,0 +1,17 @@
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logos/Logo.png
+  color_dark: "#272727"
+  image_dark: assets/logos/Logo.png
+
+  android_12:
+    color: "#ffffff"
+    image: assets/logos/Logo.png
+    color_dark: "#272727"
+    image_dark: assets/logos/Logo.png
+
+  web: false
+
+  #in terminal : flutter pub run flutter_native_splash:create --path=splash.yaml
+
+
