@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/auth/controllers/onboarding/onboarding_controller.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/device/device_utility.dart';
@@ -12,12 +13,14 @@ class OnBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = OnBoardingController.instance;
     final dark = HelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: DeviceUtils.getBottomNavigationBarHeight() + 25,
       left: AppSizes.defaultSpace,
       child: SmoothPageIndicator(
-        controller: PageController(),
+        controller: controller.pageController,
+        onDotClicked: controller.dotNavigationClick,
         count: 3,
         effect: ExpandingDotsEffect(
           activeDotColor: dark ? ColorManager.light : ColorManager.dark,

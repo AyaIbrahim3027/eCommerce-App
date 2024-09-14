@@ -13,6 +13,7 @@ class OnBoardingScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return const Stack(
       children: [
         // Horizontal scrollable pages
