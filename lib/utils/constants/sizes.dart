@@ -1,5 +1,4 @@
 class AppSizes {
-  
   // Padding & Margin Sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
@@ -67,4 +66,7 @@ class AppSizes {
 
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
+
+  // Image Height & width
+  static const double h_150 = 150.0;
 }
