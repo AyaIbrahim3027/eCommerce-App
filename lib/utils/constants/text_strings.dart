@@ -62,4 +62,6 @@ class TextManager {
   // Text Button
   static const String skip = "Skip";
   static const String continueButton = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
 }
