@@ -69,4 +69,11 @@ class AppSizes {
 
   // Image Height & width
   static const double h_150 = 150.0;
+
+  // Size box different values
+  static const double h_24 = 24.0;
+  static const double w_24 = 24.0;
+  static const double w_8 = 8.0;
+
+
 }
