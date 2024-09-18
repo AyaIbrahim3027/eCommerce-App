@@ -21,6 +21,11 @@ class Assets {
   static const String fontsPoppinsSemiBoldItalic = 'assets/fonts/Poppins-SemiBoldItalic.ttf';
   static const String fontsPoppinsThin = 'assets/fonts/Poppins-Thin.ttf';
   static const String fontsPoppinsThinItalic = 'assets/fonts/Poppins-ThinItalic.ttf';
+  static const String logosFacebook = 'assets/logos/facebook.png';
+  static const String logosGoogle = 'assets/logos/google.png';
   static const String logosLogo = 'assets/logos/Logo.png';
+  static const String onboardingImagesSammyDelivery = 'assets/images/onboarding_images/sammy-delivery.gif';
+  static const String onboardingImagesSammySearching = 'assets/images/onboarding_images/sammy-searching.gif';
+  static const String onboardingImagesSammyShopping = 'assets/images/onboarding_images/sammy-shopping.gif';
 
 }

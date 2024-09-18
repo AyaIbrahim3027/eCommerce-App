@@ -24,6 +24,7 @@ class TextManager {
   static const String changeYourPasswordSubTitle =
       "Your Account Security is our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
   static const String confirmEmailTitle = "Verify Your Email Address!";
+  static const String supportEmail= "support@supportteam.com";
   static const String confirmEmailSubTitle =
       "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a world of unrivaled Deals and Personalized Offers. ";
   static const String emailNotReceivedMessage =
@@ -57,4 +58,5 @@ class TextManager {
 
   // Text Button
   static const String skip = "Skip";
+  static const String continueButton = "continue";
 }

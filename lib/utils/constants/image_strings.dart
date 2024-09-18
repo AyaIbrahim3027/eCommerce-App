@@ -14,4 +14,8 @@ class ImageManager {
       "assets/images/onboarding_images/sammy-shopping.gif";
   static const String onBoardingImage3 =
       "assets/images/onboarding_images/sammy-delivery.gif";
+
+  // animation
+  static const String deliveredEmail = "assets/images/animations/sammy-man-receives-a-mail.png";
+
 }
