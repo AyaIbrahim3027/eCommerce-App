@@ -17,5 +17,6 @@ class ImageManager {
 
   // animation
   static const String deliveredEmail = "assets/images/animations/sammy-man-receives-a-mail.png";
+  static const String staticSuccess = "assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png";
 
 }

@@ -9,17 +9,19 @@ class VerifyEmailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            onPressed: () => Get.offAll(() => const LoginScreen()),
-            icon: const Icon(CupertinoIcons.clear),
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          actions: [
+            IconButton(
+              onPressed: () => Get.offAll(() => const LoginScreen()),
+              icon: const Icon(CupertinoIcons.clear),
+            ),
+          ],
+        ),
+        body: const VerifyEmailScreenBodyWidget(),
       ),
-      body: const VerifyEmailScreenBodyWidget(),
     );
   }
 }

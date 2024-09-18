@@ -30,6 +30,9 @@ class TextManager {
   static const String emailNotReceivedMessage =
       "Didn't get the email? Check your junk/spam or resend it.";
 
+  static const String yourAccountCreatedTitle = 'Your Account Successfully Created';
+  static const String yourAccountCreatedSubTitle = 'Welcome To Your Ultimate Shopping Destination Your Account is Created, Unleash The Joy Of Seamless Online Shopping!';
+
   // Authentication Form Text
   static const String firstName = 'First Name';
   static const String lastName = "Last Name";
@@ -58,5 +61,5 @@ class TextManager {
 
   // Text Button
   static const String skip = "Skip";
-  static const String continueButton = "continue";
+  static const String continueButton = "Continue";
 }

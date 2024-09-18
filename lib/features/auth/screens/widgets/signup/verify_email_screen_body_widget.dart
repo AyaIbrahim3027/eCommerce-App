@@ -1,9 +1,12 @@
 import 'package:ecommerce_app/common/widgets/elevated_button_widget.dart';
+import 'package:ecommerce_app/common/widgets/success_screen.dart';
+import 'package:ecommerce_app/features/auth/screens/login/login_screen.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class VerifyEmailScreenBodyWidget extends StatelessWidget {
   const VerifyEmailScreenBodyWidget({super.key});
@@ -54,7 +57,14 @@ class VerifyEmailScreenBodyWidget extends StatelessWidget {
 
             // Buttons
             ElevatedButtonWidget(
-              onPressed: () {},
+              onPressed: () => Get.to(() => SuccessScreen(
+                    image: ImageManager.staticSuccess,
+                    title: TextManager.yourAccountCreatedTitle,
+                    subTitle: TextManager.yourAccountCreatedSubTitle,
+                    onPressed: () => Get.to(
+                      () => const LoginScreen(),
+                    ),
+                  )),
               widget: const Text(TextManager.continueButton),
             ),
             const SizedBox(
