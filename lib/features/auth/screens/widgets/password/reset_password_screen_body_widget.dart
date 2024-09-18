@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/common/widgets/elevated_button_widget.dart';
+import 'package:ecommerce_app/common/widgets/text_button_widget.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
@@ -51,15 +52,10 @@ class ResetPasswordScreenBodyWidget extends StatelessWidget {
             const SizedBox(
               height: AppSizes.spaceBtwItems,
             ),
-            SizedBox(
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  TextManager.resendEmail,
-                  style: Theme.of(context).textTheme.labelSmall,
-                ),
-              ),
+
+            TextButtonWidget(
+              onPressed: () {},
+              text: TextManager.resendEmail,
             ),
           ],
         ),

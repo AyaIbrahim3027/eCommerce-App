@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widgets/elevated_button_widget.dart';
 import 'package:ecommerce_app/common/widgets/success_screen.dart';
+import 'package:ecommerce_app/common/widgets/text_button_widget.dart';
 import 'package:ecommerce_app/features/auth/screens/login/login_screen.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
@@ -70,15 +71,9 @@ class VerifyEmailScreenBodyWidget extends StatelessWidget {
             const SizedBox(
               height: AppSizes.spaceBtwItems,
             ),
-            SizedBox(
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  TextManager.resendEmail,
-                  style: Theme.of(context).textTheme.labelSmall,
-                ),
-              ),
+            TextButtonWidget(
+              onPressed: () {},
+              text: TextManager.resendEmail,
             ),
           ],
         ),
