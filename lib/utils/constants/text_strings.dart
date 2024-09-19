@@ -64,4 +64,11 @@ class TextManager {
   static const String continueButton = "Continue";
   static const String submit = "Submit";
   static const String done = "Done";
+
+  // Navigation Labels
+  static const String home = "Home";
+  static const String store = "Store";
+  static const String wishlist = "Wishlist";
+  static const String profile = "Profile";
+
 }

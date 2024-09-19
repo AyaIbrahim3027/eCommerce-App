@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/common/widgets/elevated_button_widget.dart';
 import 'package:ecommerce_app/features/auth/screens/password_configuration/forget_password_screen.dart';
 import 'package:ecommerce_app/features/auth/screens/siginup/signup_screen.dart';
+import 'package:ecommerce_app/navigationbar.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class LoginScreenForm extends StatelessWidget {
 
           // Sign In button
           ElevatedButtonWidget(
-            onPressed: () {},
+            onPressed: () => Get.to(() => const NavigationBarMenu()),
             widget: const Text(TextManager.signIn),
           ),
 
