@@ -1,5 +1,4 @@
 class ImageManager {
-
   // App Logos
   static const String appLogo = "assets/logos/Logo.png";
 
@@ -15,8 +14,20 @@ class ImageManager {
   static const String onBoardingImage3 =
       "assets/images/onboarding_images/sammy-delivery.gif";
 
-  // animation
-  static const String deliveredEmail = "assets/images/animations/sammy-man-receives-a-mail.png";
-  static const String staticSuccess = "assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png";
+  // Animation
+  static const String deliveredEmail =
+      "assets/images/animations/sammy-man-receives-a-mail.png";
+  static const String staticSuccess =
+      "assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png";
 
+  // Categories Icons
+  static const String sportIcon = "assets/icons/categories/sports.png";
+  static const String clothIcon = "assets/icons/categories/cloth.png";
+  static const String shoeIcon = "assets/icons/categories/shoe.png";
+  static const String cosmeticsIcon = "assets/icons/categories/cosmetics.png";
+  static const String animalIcon = "assets/icons/categories/penguin.png";
+  static const String toyIcon = "assets/icons/categories/toys.png";
+  static const String furnitureIcon = "assets/icons/categories/table.png";
+  static const String jeweleryIcon = "assets/icons/categories/necklace.png";
+  static const String electronicsIcon = "assets/icons/categories/computer.png";
 }

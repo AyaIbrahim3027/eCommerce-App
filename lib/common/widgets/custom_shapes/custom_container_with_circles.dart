@@ -16,7 +16,7 @@ class CustomContainerWithCircles extends StatelessWidget {
     return Container(
       color: ColorManager.primaryColor,
       child: SizedBox(
-        height: AppSizes.h_370,
+        height: AppSizes.h_350,
         child: Stack(
           children: [
             // Background custom shapes

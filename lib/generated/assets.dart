@@ -2,6 +2,8 @@
 class Assets {
   Assets._();
 
+  static const String animationsSammyManAndWomanHighFivingEachOther = 'assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png';
+  static const String animationsSammyManReceivesAMail = 'assets/images/animations/sammy-man-receives-a-mail.png';
   static const String assetsLogosLogo = 'assets/logos/Logo.svg';
   static const String fontsPoppinsBlack = 'assets/fonts/Poppins-Black.ttf';
   static const String fontsPoppinsBlackItalic = 'assets/fonts/Poppins-BlackItalic.ttf';
