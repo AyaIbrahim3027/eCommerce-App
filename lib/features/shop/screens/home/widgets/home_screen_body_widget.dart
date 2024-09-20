@@ -1,5 +1,8 @@
 import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_container.dart';
+import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:ecommerce_app/utils/constants/sizes.dart';
+import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +20,13 @@ class HomeScreenBodyWidget extends StatelessWidget {
               children: [
                 // Appbar
                 HomeAppBar(),
+                SizedBox(
+                  height: AppSizes.spaceBtwItems,
+                ),
+
                 // Search
+                SearchContainer(text:TextManager.search,),
+
                 // Categories
               ],
             ),
@@ -27,3 +36,4 @@ class HomeScreenBodyWidget extends StatelessWidget {
     );
   }
 }
+
