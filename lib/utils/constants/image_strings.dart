@@ -30,4 +30,10 @@ class ImageManager {
   static const String furnitureIcon = "assets/icons/categories/table.png";
   static const String jeweleryIcon = "assets/icons/categories/necklace.png";
   static const String electronicsIcon = "assets/icons/categories/computer.png";
+
+ // Banners
+  static const String promoBanner1 = "assets/images/banners/discount-ice-skates.jpg";
+  static const String promoBanner2 = "assets/images/banners/discount-headphones-podium.jpg";
+  static const String promoBanner3 = "assets/images/banners/discount-vr-glasses-podium.jpg";
+  static const String promoBanner4 = "assets/images/banners/discount-purse-podium.jpg";
 }

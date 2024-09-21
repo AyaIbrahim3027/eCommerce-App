@@ -2,10 +2,13 @@ import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_con
 import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_categories_section.dart';
+import 'package:ecommerce_app/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeScreenBodyWidget extends StatelessWidget {
   const HomeScreenBodyWidget({super.key});
@@ -35,6 +38,20 @@ class HomeScreenBodyWidget extends StatelessWidget {
 
                 // Categories
                 HomeCategoriesSection(),
+              ],
+            ),
+          ),
+
+          // Body
+
+          Padding(
+            padding: EdgeInsets.all(AppSizes.defaultSpace),
+            child: PromoSlider(
+              banners: [
+                ImageManager.promoBanner1,
+                ImageManager.promoBanner2,
+                ImageManager.promoBanner3,
+                ImageManager.promoBanner4,
               ],
             ),
           ),

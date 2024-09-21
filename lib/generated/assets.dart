@@ -5,6 +5,15 @@ class Assets {
   static const String animationsSammyManAndWomanHighFivingEachOther = 'assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png';
   static const String animationsSammyManReceivesAMail = 'assets/images/animations/sammy-man-receives-a-mail.png';
   static const String assetsLogosLogo = 'assets/logos/Logo.svg';
+  static const String categoriesCloth = 'assets/icons/categories/cloth.png';
+  static const String categoriesComputer = 'assets/icons/categories/computer.png';
+  static const String categoriesCosmetics = 'assets/icons/categories/cosmetics.png';
+  static const String categoriesNecklace = 'assets/icons/categories/necklace.png';
+  static const String categoriesPenguin = 'assets/icons/categories/penguin.png';
+  static const String categoriesShoe = 'assets/icons/categories/shoe.png';
+  static const String categoriesSports = 'assets/icons/categories/sports.png';
+  static const String categoriesTable = 'assets/icons/categories/table.png';
+  static const String categoriesToys = 'assets/icons/categories/toys.png';
   static const String fontsPoppinsBlack = 'assets/fonts/Poppins-Black.ttf';
   static const String fontsPoppinsBlackItalic = 'assets/fonts/Poppins-BlackItalic.ttf';
   static const String fontsPoppinsBold = 'assets/fonts/Poppins-Bold.ttf';
