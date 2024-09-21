@@ -46,6 +46,9 @@ class ColorManager {
   static const Color lightGrey = Color(0xfff9f9f9);
   static const Color white = Color(0xffffffff);
 
+  // Icon Colors
+  static const Color red = Colors.red;
+
   // Gradient Colors
   static const Gradient linearGradient = LinearGradient(
     begin: Alignment(0, 0),

@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_container.dart';
+import 'package:ecommerce_app/common/widgets/product_cards_vertical.dart';
 import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_categories_section.dart';
@@ -43,15 +44,25 @@ class HomeScreenBodyWidget extends StatelessWidget {
           ),
 
           // Body
-
           Padding(
             padding: EdgeInsets.all(AppSizes.defaultSpace),
-            child: PromoSlider(
-              banners: [
-                ImageManager.promoBanner1,
-                ImageManager.promoBanner2,
-                ImageManager.promoBanner3,
-                ImageManager.promoBanner4,
+            child: Column(
+              children: [
+                // Promo Slider
+                PromoSlider(
+                  banners: [
+                    ImageManager.promoBanner1,
+                    ImageManager.promoBanner2,
+                    ImageManager.promoBanner3,
+                    ImageManager.promoBanner4,
+                  ],
+                ),
+                SizedBox(
+                  height: AppSizes.spaceBtwSections,
+                ),
+
+                // Popular Products
+                ProductCardsVertical(),
               ],
             ),
           ),

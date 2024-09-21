@@ -5,6 +5,10 @@ class Assets {
   static const String animationsSammyManAndWomanHighFivingEachOther = 'assets/images/animations/sammy-man-and-woman-high-fiving-each-other.png';
   static const String animationsSammyManReceivesAMail = 'assets/images/animations/sammy-man-receives-a-mail.png';
   static const String assetsLogosLogo = 'assets/logos/Logo.svg';
+  static const String bannersDiscountHeadphonesPodium = 'assets/images/banners/discount-headphones-podium.jpg';
+  static const String bannersDiscountIceSkates = 'assets/images/banners/discount-ice-skates.jpg';
+  static const String bannersDiscountPursePodium = 'assets/images/banners/discount-purse-podium.jpg';
+  static const String bannersDiscountVrGlassesPodium = 'assets/images/banners/discount-vr-glasses-podium.jpg';
   static const String categoriesCloth = 'assets/icons/categories/cloth.png';
   static const String categoriesComputer = 'assets/icons/categories/computer.png';
   static const String categoriesCosmetics = 'assets/icons/categories/cosmetics.png';

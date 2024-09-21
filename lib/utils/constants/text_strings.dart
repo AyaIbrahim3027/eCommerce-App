@@ -74,4 +74,6 @@ class TextManager {
   static const String wishlist = "Wishlist";
   static const String profile = "Profile";
 
+  // Sale Tag
+  static const String sale_25 = "25%";
 }
