@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_container.dart';
+import 'package:ecommerce_app/common/widgets/grid_layout.dart';
 import 'package:ecommerce_app/common/widgets/product_cards_vertical.dart';
 import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
@@ -16,11 +17,11 @@ class HomeScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
           // Header
-          HeaderContainer(
+          const HeaderContainer(
             widget: Column(
               children: [
                 // Appbar
@@ -45,11 +46,11 @@ class HomeScreenBodyWidget extends StatelessWidget {
 
           // Body
           Padding(
-            padding: EdgeInsets.all(AppSizes.defaultSpace),
+            padding: const EdgeInsets.all(AppSizes.defaultSpace),
             child: Column(
               children: [
                 // Promo Slider
-                PromoSlider(
+                const PromoSlider(
                   banners: [
                     ImageManager.promoBanner1,
                     ImageManager.promoBanner2,
@@ -57,12 +58,18 @@ class HomeScreenBodyWidget extends StatelessWidget {
                     ImageManager.promoBanner4,
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: AppSizes.spaceBtwSections,
                 ),
 
                 // Popular Products
-                ProductCardsVertical(),
+                GridLayout(
+                  itemCount: 2,
+                  itemBuilder: (_, index) => const ProductCardsVertical(
+                    image: ImageManager.productImage1,
+                    saleNumber: TextManager.sale_25,
+                  ),
+                ),
               ],
             ),
           ),
