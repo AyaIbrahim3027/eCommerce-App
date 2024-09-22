@@ -63,6 +63,10 @@ class TextManager {
   static const String popularProducts = "Popular Products";
   static const String viewAll = "View All";
 
+  // Store
+  static const String featuredBrands = "Featured Brands";
+
+
   // Text Button
   static const String skip = "Skip";
   static const String continueButton = "Continue";
