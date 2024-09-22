@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/common/widgets/brand_name_with_icon.dart';
 import 'package:ecommerce_app/common/widgets/circular_image.dart';
 import 'package:ecommerce_app/common/widgets/rounded_container.dart';
 import 'package:ecommerce_app/common/widgets/search_container.dart';
@@ -59,14 +60,23 @@ class StoreScreenBodyWidget extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                       widget: Row(
                         children: [
-
                           // Icons
                           CircularImage(
                             image: ImageManager.clothIcon,
                             backgroundColor: Colors.transparent,
                           ),
-                           SizedBox(
-                            height: AppSizes.sm,
+                          SizedBox(
+                            width: AppSizes.sm,
+                          ),
+
+                          // Text
+                          Column(
+                            children: [
+                              // Brand with verify icon
+                              BrandNameWithVerifiedIcon(
+                                brandName: "Nike",
+                              ),
+                            ],
                           ),
                         ],
                       ),

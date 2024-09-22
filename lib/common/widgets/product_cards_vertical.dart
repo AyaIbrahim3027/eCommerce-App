@@ -88,9 +88,8 @@ class ProductCardsVertical extends StatelessWidget {
                   ),
 
                   // Brand with verify icon
-                  BrandNameWithIcon(
+                  BrandNameWithVerifiedIcon(
                     brandName: "Nike",
-                    icon: Iconsax.verify5,
                   ),
                   SizedBox(
                     height: AppSizes.spaceBtwItems / 2,
