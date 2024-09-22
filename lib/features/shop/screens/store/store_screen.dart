@@ -1,3 +1,8 @@
+import 'package:ecommerce_app/common/widgets/appbar.dart';
+import 'package:ecommerce_app/common/widgets/cart_counter_icon.dart';
+import 'package:ecommerce_app/utils/constants/colors.dart';
+import 'package:ecommerce_app/utils/constants/text_strings.dart';
+import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -5,6 +10,24 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(child: Scaffold());
+    final dark = HelperFunctions.isDarkMode(context);
+
+    return SafeArea(
+      child: Scaffold(
+        // Appbar
+        appBar: CustomAppBar(
+          title: Text(
+            TextManager.store,
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+          actions: [
+            CartCounterIcon(
+              iconColor: dark ? ColorManager.light : ColorManager.dark,
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
