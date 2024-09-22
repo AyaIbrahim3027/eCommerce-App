@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widgets/appbar.dart';
 import 'package:ecommerce_app/common/widgets/cart_counter_icon.dart';
+import 'package:ecommerce_app/features/shop/screens/store/widgets/store_screen_body_widget.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
@@ -27,6 +28,7 @@ class StoreScreen extends StatelessWidget {
             ),
           ],
         ),
+        body: const StoreScreenBodyWidget(),
       ),
     );
   }
