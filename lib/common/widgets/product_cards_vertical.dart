@@ -49,7 +49,7 @@ class ProductCardsVertical extends StatelessWidget {
               widget: Stack(
                 children: [
                   // Image
-                  RoundedImageContainer(image: image),
+                  RoundedImageContainer(image: image , fit: BoxFit.contain,),
 
                   // Sale Tag
                   SaleTag(saleNumber: saleNumber),

@@ -45,11 +45,13 @@ class RoundedImageContainer extends StatelessWidget {
           borderRadius: applyImageRadius
               ? BorderRadius.circular(borderRadius)
               : BorderRadius.zero,
-          child: Image(
-            fit: fit,
-            image: isNetworkImage
-                ? NetworkImage(image)
-                : AssetImage(image) as ImageProvider,
+          child: Center(
+            child: Image(
+              fit: fit,
+              image: isNetworkImage
+                  ? NetworkImage(image)
+                  : AssetImage(image) as ImageProvider,
+            ),
           ),
         ),
       ),
