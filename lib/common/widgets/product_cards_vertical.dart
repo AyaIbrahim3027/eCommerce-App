@@ -40,7 +40,6 @@ class ProductCardsVertical extends StatelessWidget {
         ),
         child: Column(
           children: [
-
             // Thumbnail
             RoundedContainer(
               height: AppSizes.h_180,
@@ -49,7 +48,10 @@ class ProductCardsVertical extends StatelessWidget {
               widget: Stack(
                 children: [
                   // Image
-                  RoundedImageContainer(image: image , fit: BoxFit.contain,),
+                  RoundedImageContainer(
+                    image: image,
+                    fit: BoxFit.contain,
+                  ),
 
                   // Sale Tag
                   SaleTag(saleNumber: saleNumber),
@@ -71,64 +73,67 @@ class ProductCardsVertical extends StatelessWidget {
             ),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: AppSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: AppSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Title
-                  const ProductTitleText(
+                  ProductTitleText(
                     title: 'Nike Air Shoes',
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: AppSizes.spaceBtwItems / 2,
                   ),
 
                   // Brand with verify icon
-                  const BrandNameWithIcon(
+                  BrandNameWithIcon(
                     brandName: "Nike",
                     icon: Iconsax.verify5,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: AppSizes.spaceBtwItems / 2,
-                  ),
-                  // Price
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-
-                      // Price
-                      const ProductPriceText(
-                        price: '35.5',
-                        isLarge: true,
-                      ),
-
-                      // Add to Cart Button
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: ColorManager.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(AppSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(AppSizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: AppSizes.iconLg * 1.2,
-                          height: AppSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: ColorManager.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ],
               ),
+            ),
+
+            const Spacer(),
+
+            // Price
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                const Padding(
+                  padding: EdgeInsets.only(left: AppSizes.sm),
+                  child: ProductPriceText(
+                    price: '35.5',
+                  ),
+                ),
+
+                // Add to Cart Button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: ColorManager.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(AppSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: AppSizes.iconLg * 1.2,
+                    height: AppSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: ColorManager.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

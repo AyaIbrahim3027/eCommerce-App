@@ -64,9 +64,9 @@ class HomeScreenBodyWidget extends StatelessWidget {
                 ),
 
                 // Heading
-                const SectionHeading(
+                SectionHeading(
                   title: TextManager.popularProducts,
-                  showActionButton: false,
+                  onPressed: () {},
                 ),
 
                 const SizedBox(

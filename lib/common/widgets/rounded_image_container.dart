@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,7 @@ class RoundedImageContainer extends StatelessWidget {
     this.applyImageRadius = true,
     this.isNetworkImage = false,
     this.border,
-    this.backgroundColor = ColorManager.light,
+    this.backgroundColor,
     this.fit = BoxFit.cover,
     this.padding,
     this.onTap,
@@ -22,7 +21,7 @@ class RoundedImageContainer extends StatelessWidget {
   final String image;
   final bool applyImageRadius, isNetworkImage;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final void Function()? onTap;
