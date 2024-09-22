@@ -65,6 +65,8 @@ class TextManager {
 
   // Store
   static const String featuredBrands = "Featured Brands";
+  static const String numberOfProducts = "256 Products";
+  static const String brandName = "Nike";
 
 
   // Text Button
