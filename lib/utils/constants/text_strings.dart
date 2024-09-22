@@ -60,6 +60,7 @@ class TextManager {
   static const String homeAppbarSubTitle = "Taimoor Sikander";
   static const String search = "Search In Store...";
   static const String popularCategories = "Popular Categories";
+  static const String popularProducts = "Popular Products";
   static const String viewAll = "View All";
 
   // Text Button

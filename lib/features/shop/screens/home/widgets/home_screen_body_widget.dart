@@ -2,6 +2,7 @@ import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_con
 import 'package:ecommerce_app/common/widgets/grid_layout.dart';
 import 'package:ecommerce_app/common/widgets/product_cards_vertical.dart';
 import 'package:ecommerce_app/common/widgets/search_container.dart';
+import 'package:ecommerce_app/common/widgets/section_heading.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_categories_section.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/promo_slider.dart';
@@ -60,6 +61,16 @@ class HomeScreenBodyWidget extends StatelessWidget {
                 ),
                 const SizedBox(
                   height: AppSizes.spaceBtwSections,
+                ),
+
+                // Heading
+                const SectionHeading(
+                  title: TextManager.popularProducts,
+                  showActionButton: false,
+                ),
+
+                const SizedBox(
+                  height: AppSizes.spaceBtwItems,
                 ),
 
                 // Popular Products
