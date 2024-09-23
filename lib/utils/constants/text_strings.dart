@@ -69,6 +69,7 @@ class TextManager {
   static const String featuredBrands = "Featured Brands";
   static const String numberOfProducts = "256 Products";
   static const String brandName = "Nike";
+  static const String youMightLike = "You might like";
 
   // Store TabBar
   static const String sports = "Sports";
