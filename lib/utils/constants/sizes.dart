@@ -89,7 +89,7 @@ class AppSizes {
   static const double h_80 = 80.0;
   static const double h_350 = 350.0;
   static const double w_350 = 350.0;
-  static const double h_440 = 440.0;
+  static const double h_430 = 430.0;
 
   // Blur Radius & Spread Radius
   static const double bR_50 = 50.0;
