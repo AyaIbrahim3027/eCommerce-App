@@ -80,7 +80,44 @@ class TextManager {
 
   // Profile
   static const String account = "Account";
+  static const String accountSettings = "Account Settings";
   static const String userName = "User Name";
+  static const String accountSettingsTitle1 = "My Addresses";
+  static const String accountSettingsTitle2 = "My Card";
+  static const String accountSettingsTitle3 = "My Orders";
+  static const String accountSettingsTitle4 = "Bank Account";
+  static const String accountSettingsTitle5 = "My Coupons";
+  static const String accountSettingsTitle6 = "Notifications";
+  static const String accountSettingsTitle7 = "Account Privacy";
+  static const String accountSettingsSubTitle1 =
+      "Set shopping delivery address";
+  static const String accountSettingsSubTitle2 =
+      "Add, remove products and move to checkout";
+  static const String accountSettingsSubTitle3 =
+      "In progress and Completed Orders";
+  static const String accountSettingsSubTitle4 =
+      "Withdraw balance to registered bank account";
+  static const String accountSettingsSubTitle5 =
+      "List of all the discounted coupons";
+  static const String accountSettingsSubTitle6 =
+      "Set any kind of notification message";
+  static const String accountSettingsSubTitle7 =
+      "Manage data usage and connected accounts";
+
+  // App Settings
+  static const String appSettings = "App Settings";
+  static const String appSettingsTitle1 = "Load Data";
+  static const String appSettingsTitle2 = "Geolocation";
+  static const String appSettingsTitle3 = "Safe Mode";
+  static const String appSettingsTitle4 = "HD Image Quality";
+  static const String appSettingsSubTitle1 =
+      "Upload Data To Your Cloud Firebase";
+  static const String appSettingsSubTitle2 =
+      "Set recommendation based on location";
+  static const String appSettingsSubTitle3 =
+      "Search result is safe for all ages";
+  static const String appSettingsSubTitle4 = "Set image quality to be seen";
+  static const String logout = "Logout";
 
   // Text Button
   static const String skip = "Skip";
