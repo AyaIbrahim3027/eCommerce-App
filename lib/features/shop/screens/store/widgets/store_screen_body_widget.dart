@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/common/widgets/section_heading.dart';
+import 'package:ecommerce_app/common/widgets/tabbar.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widgets/featured_brands_grid_list.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
@@ -57,6 +58,16 @@ class StoreScreenBodyWidget extends StatelessWidget {
                   ],
                 ),
               ),
+
+              // Tabs
+              bottom:
+              const CustomTabBar(tabs: [
+                Tab(child: Text(TextManager.sports)),
+                Tab(child: Text(TextManager.furniture)),
+                Tab(child: Text(TextManager.electronics)),
+                Tab(child: Text(TextManager.clothes)),
+                Tab(child: Text(TextManager.cosmetics)),
+              ],),
             ),
           ];
         },

@@ -14,21 +14,24 @@ class StoreScreen extends StatelessWidget {
     final dark = HelperFunctions.isDarkMode(context);
 
     return SafeArea(
-      child: Scaffold(
-        // Appbar
-        appBar: CustomAppBar(
-          title: Text(
-            TextManager.store,
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-          actions: [
-            CartCounterIcon(
-              iconColor: dark ? ColorManager.light : ColorManager.dark,
-              onPressed: () {},
+      child: DefaultTabController(
+        length: 5,
+        child: Scaffold(
+          // Appbar
+          appBar: CustomAppBar(
+            title: Text(
+              TextManager.store,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
-          ],
+            actions: [
+              CartCounterIcon(
+                iconColor: dark ? ColorManager.light : ColorManager.dark,
+                onPressed: () {},
+              ),
+            ],
+          ),
+          body: const StoreScreenBodyWidget(),
         ),
-        body: const StoreScreenBodyWidget(),
       ),
     );
   }
