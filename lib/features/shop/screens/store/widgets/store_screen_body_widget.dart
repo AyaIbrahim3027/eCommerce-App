@@ -167,4 +167,19 @@ class BrandShowcase extends StatelessWidget {
     );
   }
 
+  Widget brandTopProductImageWidget(context, {required String image}) {
+    final dark = HelperFunctions.isDarkMode(context);
+    return Expanded(
+      child: RoundedContainer(
+        height: AppSizes.h_100,
+        backgroundColor: dark ? ColorManager.darkerGrey : ColorManager.light,
+        margin: const EdgeInsets.only(right: AppSizes.sm),
+        padding: const EdgeInsets.all(AppSizes.md),
+        widget: Image(
+          image: AssetImage(image),
+          fit: BoxFit.contain,
+        ),
+      ),
+    );
+  }
 }
