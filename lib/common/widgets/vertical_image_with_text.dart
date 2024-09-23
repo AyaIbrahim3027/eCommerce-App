@@ -9,7 +9,7 @@ class VerticalImageWithText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = ColorManager.white,
-    this.backgroundColor = ColorManager.white,
+    this.backgroundColor,
     this.onTap,
   });
 
