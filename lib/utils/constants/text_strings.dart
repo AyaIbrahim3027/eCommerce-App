@@ -78,6 +78,9 @@ class TextManager {
   static const String clothes = "Clothes";
   static const String cosmetics = "Cosmetics";
 
+  // Profile
+  static const String account = "Account";
+
   // Text Button
   static const String skip = "Skip";
   static const String continueButton = "Continue";

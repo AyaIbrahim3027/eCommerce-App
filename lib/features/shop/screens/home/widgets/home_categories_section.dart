@@ -28,6 +28,7 @@ class HomeCategoriesSection extends StatelessWidget {
 
           // Categories
           HomeCategoriesList(),
+          SizedBox(height:AppSizes.spaceBtwSections ,),
         ],
       ),
     );
