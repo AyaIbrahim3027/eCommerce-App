@@ -1,11 +1,9 @@
-import 'package:ecommerce_app/common/widgets/brand_card.dart';
-import 'package:ecommerce_app/common/widgets/rounded_container.dart';
 import 'package:ecommerce_app/common/widgets/search_container.dart';
 import 'package:ecommerce_app/common/widgets/section_heading.dart';
 import 'package:ecommerce_app/common/widgets/tabbar.dart';
+import 'package:ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widgets/featured_brands_grid_list.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
-import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
@@ -77,108 +75,14 @@ class StoreScreenBodyWidget extends StatelessWidget {
       },
 
       // Body
-      body: TabBarView(
+      body: const TabBarView(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(AppSizes.defaultSpace),
-            child: Column(
-              children: [
-                // Brands
-                BrandShowcase(),
-                // Products
-              ],
-            ),
-          ),
+          CategoryTab(),
+          CategoryTab(),
+          CategoryTab(),
+          CategoryTab(),
+          CategoryTab(),
         ],
-      ),
-    );
-  }
-}
-
-class BrandShowcase extends StatelessWidget {
-  const BrandShowcase({
-    super.key,
-    required this.image,
-  });
-
-  final List<String> image;
-
-  @override
-  Widget build(BuildContext context) {
-    final dark = HelperFunctions.isDarkMode(context);
-
-    return RoundedContainer(
-      showBorder: true,
-      borderColor: ColorManager.darkGrey,
-      backgroundColor: Colors.transparent,
-      margin: const EdgeInsets.only(bottom: AppSizes.spaceBtwItems),
-      padding: const EdgeInsets.all(AppSizes.md),
-      widget: Column(
-        children: [
-          // Brand With Products Count
-          const BrandCard(showBorder: false),
-
-          // Brand Top 3 Product Image
-          Row(
-            children: [
-              Expanded(
-                child: RoundedContainer(
-                  height: AppSizes.h_100,
-                  backgroundColor:
-                      dark ? ColorManager.darkerGrey : ColorManager.light,
-                  margin: const EdgeInsets.only(right: AppSizes.sm),
-                  padding: const EdgeInsets.all(AppSizes.md),
-                  widget: const Image(
-                    image: AssetImage(ImageManager.productImage1),
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-              Expanded(
-                child: RoundedContainer(
-                  height: AppSizes.h_100,
-                  backgroundColor:
-                      dark ? ColorManager.darkerGrey : ColorManager.light,
-                  margin: const EdgeInsets.only(right: AppSizes.sm),
-                  padding: const EdgeInsets.all(AppSizes.md),
-                  widget: const Image(
-                    image: AssetImage(ImageManager.productImage1),
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-              Expanded(
-                child: RoundedContainer(
-                  height: AppSizes.h_100,
-                  backgroundColor:
-                      dark ? ColorManager.darkerGrey : ColorManager.light,
-                  margin: const EdgeInsets.only(right: AppSizes.sm),
-                  padding: const EdgeInsets.all(AppSizes.md),
-                  widget: const Image(
-                    image: AssetImage(ImageManager.productImage1),
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget brandTopProductImageWidget(context, {required String image}) {
-    final dark = HelperFunctions.isDarkMode(context);
-    return Expanded(
-      child: RoundedContainer(
-        height: AppSizes.h_100,
-        backgroundColor: dark ? ColorManager.darkerGrey : ColorManager.light,
-        margin: const EdgeInsets.only(right: AppSizes.sm),
-        padding: const EdgeInsets.all(AppSizes.md),
-        widget: Image(
-          image: AssetImage(image),
-          fit: BoxFit.contain,
-        ),
       ),
     );
   }
