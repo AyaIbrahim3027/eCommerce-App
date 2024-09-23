@@ -42,5 +42,29 @@ class Assets {
   static const String onboardingImagesSammyDelivery = 'assets/images/onboarding_images/sammy-delivery.gif';
   static const String onboardingImagesSammySearching = 'assets/images/onboarding_images/sammy-searching.gif';
   static const String onboardingImagesSammyShopping = 'assets/images/onboarding_images/sammy-shopping.gif';
+  static const String productsCurologyWK0hMlvfucUnsplash = 'assets/images/products/curology-wK0h-mlvfuc-unsplash.jpg';
+  static const String productsEsmondeYongPcCzw35ho0Unsplash = 'assets/images/products/esmonde-yong-Pc-Czw35ho0-unsplash.jpg';
+  static const String productsFernandoAndradePotCPECw8AUnsplash = 'assets/images/products/fernando-andrade-potCPE_Cw8A-unsplash.jpg';
+  static const String productsGiorgioTrovatoK62u25Jk6voUnsplash = 'assets/images/products/giorgio-trovato-K62u25Jk6vo-unsplash.jpg';
+  static const String productsGiorgioTrovatoP0OlRAAYXLYUnsplash = 'assets/images/products/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg';
+  static const String productsHutomoAbriantoX5BWooeO4CwUnsplash = 'assets/images/products/hutomo-abrianto-X5BWooeO4Cw-unsplash.jpg';
+  static const String productsImaniBahatiLxVxPA1LOVMUnsplash = 'assets/images/products/imani-bahati-LxVxPA1LOVM-unsplash.jpg';
+  static const String productsKarlyJones4i9ef6xU738Unsplash = 'assets/images/products/karly-jones-4i9ef6xU738-unsplash.jpg';
+  static const String productsKiranCkLSNJPltdu8Unsplash = 'assets/images/products/kiran-ck-LSNJ-pltdu8-unsplash.jpg';
+  static const String productsMalvestidaU79wy47kvVsUnsplash = 'assets/images/products/malvestida-u79wy47kvVs-unsplash.jpg';
+  static const String productsMarissaGrootesD4jRahaUaIcUnsplash = 'assets/images/products/marissa-grootes-D4jRahaUaIc-unsplash.jpg';
+  static const String productsMikkelBechYjAFnkLtKY0Unsplash = 'assets/images/products/mikkel-bech-yjAFnkLtKY0-unsplash.jpg';
+  static const String productsNataliyaMelnychuk5ngCICAXiH0Unsplash = 'assets/images/products/nataliya-melnychuk-5ngCICAXiH0-unsplash.jpg';
+  static const String productsNimbleMadeKMGX6UK06PsUnsplash = 'assets/images/products/nimble-made-kMGX6UK06Ps-unsplash.jpg';
+  static const String productsNorbertLevajsicsDUx0gwLbhzsUnsplash = 'assets/images/products/norbert-levajsics-dUx0gwLbhzs-unsplash.jpg';
+  static const String productsPairTrainers = 'assets/images/products/pair-trainers.jpg';
+  static const String productsPesceHuangTCMblFBiQAYUnsplash = 'assets/images/products/pesce-huang-TCMblFBiQAY-unsplash.jpg';
+  static const String productsRachitTank2cFZFB08UMUnsplash = 'assets/images/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg';
+  static const String productsRuslanBardash4kTbAMRAHtQUnsplash = 'assets/images/products/ruslan-bardash-4kTbAMRAHtQ-unsplash.jpg';
+  static const String productsSportsShoePairDesignIllustrationGeneratedByAi = 'assets/images/products/sports-shoe-pair-design-illustration-generated-by-ai.jpg';
+  static const String productsStillLifeRenderingJacketsDisplay = 'assets/images/products/still-life-rendering-jackets-display.jpg';
+  static const String productsTobiasTulliusFg15LdqpWrsUnsplash = 'assets/images/products/tobias-tullius-Fg15LdqpWrs-unsplash.jpg';
+  static const String productsTopViewIceSkatesStillLife = 'assets/images/products/top-view-ice-skates-still-life.jpg';
+  static const String productsYASHPAlernbLlDUUnsplash = 'assets/images/products/y-a-s-h-PAlernbLlDU-unsplash.jpg';
 
 }

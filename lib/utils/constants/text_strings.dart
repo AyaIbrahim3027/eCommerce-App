@@ -80,6 +80,7 @@ class TextManager {
 
   // Profile
   static const String account = "Account";
+  static const String userName = "User Name";
 
   // Text Button
   static const String skip = "Skip";

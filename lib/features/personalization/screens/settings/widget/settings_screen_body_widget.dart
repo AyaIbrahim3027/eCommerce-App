@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widgets/appbar.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_container.dart';
+import 'package:ecommerce_app/common/widgets/user_profile_tile.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
@@ -17,6 +18,7 @@ class SettingsScreenBodyWidget extends StatelessWidget {
           HeaderContainer(
               widget: Column(
             children: [
+              // Appbar
               CustomAppBar(
                 title: Text(
                   TextManager.account,
@@ -25,7 +27,12 @@ class SettingsScreenBodyWidget extends StatelessWidget {
                       ),
                 ),
               ),
-              const SizedBox(height:AppSizes.spaceBtwSections ,),
+
+              // User Profile Card
+              const UserProfileTile(),
+              const SizedBox(
+                height: AppSizes.spaceBtwSections,
+              ),
             ],
           )),
           // Body
@@ -34,3 +41,4 @@ class SettingsScreenBodyWidget extends StatelessWidget {
     );
   }
 }
+
