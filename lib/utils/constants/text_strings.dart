@@ -157,4 +157,8 @@ class TextManager {
   // Rating
   static const String rate_0_5 = "0.5";
   static const String rateNo_0_5 = "(200)";
+
+  // Price
+  static const String price_250 = "\$250";
+  static const String price_175 = "175";
 }
