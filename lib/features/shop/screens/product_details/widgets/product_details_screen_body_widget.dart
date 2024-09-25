@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_data.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_image_slider.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/rating_and_share.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
@@ -27,6 +28,7 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
                 RatingAndShare(),
 
                 // Price , Title , Stock , Brand
+                ProductData(),
 
                 // Attributes
 
