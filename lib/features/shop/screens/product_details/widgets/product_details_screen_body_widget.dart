@@ -1,4 +1,6 @@
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_image_slider.dart';
+import 'package:ecommerce_app/features/shop/screens/product_details/widgets/rating_and_share.dart';
+import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetailsScreenBodyWidget extends StatelessWidget {
@@ -12,9 +14,33 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
           // Product Image Slider
           ProductImageSlider(),
 
-          // Product Details
+          // Product Detail
+          Padding(
+            padding: EdgeInsets.only(
+              right: AppSizes.defaultSpace,
+              left: AppSizes.defaultSpace,
+              bottom: AppSizes.defaultSpace,
+            ),
+            child: Column(
+              children: [
+                // Rating & Share
+                RatingAndShare(),
+
+                // Price , Title , Stock , Brand
+
+                // Attributes
+
+                // Checkout
+
+                // Desc
+
+                // Reviews
+              ],
+            ),
+          ),
         ],
       ),
     );
   }
 }
+

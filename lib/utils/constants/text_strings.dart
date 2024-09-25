@@ -153,4 +153,8 @@ class TextManager {
 
   // Sale Tag
   static const String sale_25 = "25%";
+
+  // Rating
+  static const String rate_0_5 = "0.5";
+  static const String rateNo_0_5 = "(200)";
 }

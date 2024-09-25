@@ -48,6 +48,7 @@ class ColorManager {
 
   // Icon Colors
   static const Color red = Colors.red;
+  static const Color rating = Colors.amber;
 
   // Gradient Colors
   static const Gradient linearGradient = LinearGradient(

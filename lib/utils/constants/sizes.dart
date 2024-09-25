@@ -100,5 +100,6 @@ class AppSizes {
 
   // Icons Size
   static const double s_18 = 18.0;
+  static const double s_24 = 24.0;
   static const double s_28 = 28.0;
 }
