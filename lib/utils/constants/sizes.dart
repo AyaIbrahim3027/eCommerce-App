@@ -71,6 +71,8 @@ class AppSizes {
   static const double h_150 = 150.0;
   static const double w_50 = 50.0;
   static const double h_50 = 50.0;
+  static const double w_32 = 32.0;
+  static const double h_32 = 32.0;
   static const double w_80 = 80.0;
 
   // Size box different values

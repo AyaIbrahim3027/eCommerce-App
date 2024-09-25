@@ -1,8 +1,11 @@
+import 'package:ecommerce_app/common/widgets/brand_name_with_icon.dart';
+import 'package:ecommerce_app/common/widgets/circular_image.dart';
 import 'package:ecommerce_app/common/widgets/product_title_text.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_price.dart';
+import 'package:ecommerce_app/utils/constants/enums.dart';
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
-import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class ProductData extends StatelessWidget {
@@ -10,7 +13,6 @@ class ProductData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = HelperFunctions.isDarkMode(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,6 +39,20 @@ class ProductData extends StatelessWidget {
         const SizedBox(height: AppSizes.spaceBtwItems / 1.5),
 
         // Brand
+        const Row(
+          children: [
+            CircularImage(
+              width: AppSizes.w_32,
+              height: AppSizes.h_32,
+              image: ImageManager.shoeIcon,
+            ),
+            SizedBox(width: AppSizes.sm),
+            BrandNameWithVerifiedIcon(
+              brandName: TextManager.brandName,
+              brandTextSize: TextSizes.medium,
+            ),
+          ],
+        ),
       ],
     );
   }
