@@ -6,10 +6,12 @@ class TextButtonWidget extends StatelessWidget {
     required this.onPressed,
     required this.text,
     this.width = double.infinity,
+    this.textStyle,
   });
   final void Function() onPressed;
   final String text;
   final double width;
+  final TextStyle? textStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class TextButtonWidget extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           text,
-          style: Theme.of(context).textTheme.labelSmall,
+          style: textStyle ?? Theme.of(context).textTheme.labelSmall,
         ),
       ),
     );

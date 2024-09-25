@@ -105,6 +105,24 @@ class TextManager {
   static const String accountSettingsSubTitle7 =
       "Manage data usage and connected accounts";
 
+  // Profile Information
+  static const String profileInfo = "Profile Information";
+  static const String name = "Name";
+  static const String myName = "Aya Ibrahim";
+  static const String myUserName = "Aya_Ibrahim";
+
+  // Personal Information
+  static const String personalInfo = "Personal Information";
+  static const String userId = "User Id";
+  static const String myUserId = "12345";
+  static const String myEmail = "Aya@gmail.com";
+  static const String myPhoneNo = "+201123456789";
+  static const String femaleGender = "Female";
+  static const String gender = "Gender";
+  static const String maleGender = "Male";
+  static const String dateOfBirth = "Date Of Birth";
+  static const String myDateOfBirth = "1 oct, 2000";
+
   // App Settings
   static const String appSettings = "App Settings";
   static const String appSettingsTitle1 = "Load Data";
@@ -125,6 +143,7 @@ class TextManager {
   static const String continueButton = "Continue";
   static const String submit = "Submit";
   static const String done = "Done";
+  static const String closeAccount = "Close Account";
 
   // Navigation Labels
   static const String home = "Home";
