@@ -6,30 +6,27 @@ import 'package:ecommerce_app/common/widgets/product_title_text.dart';
 import 'package:ecommerce_app/common/widgets/rounded_container.dart';
 import 'package:ecommerce_app/common/widgets/rounded_image_container.dart';
 import 'package:ecommerce_app/common/widgets/sale_tag.dart';
+import 'package:ecommerce_app/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
+import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProductCardsVertical extends StatelessWidget {
   const ProductCardsVertical({
     super.key,
-    this.onTap,
-    required this.image,
-    required this.saleNumber,
   });
-
-  final void Function()? onTap;
-  final String image;
-  final String saleNumber;
 
   @override
   Widget build(BuildContext context) {
     final dark = HelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: onTap,
+      onTap: () => Get.to(() => const ProductDetailsScreen()),
       child: Container(
         width: AppSizes.w_180,
         padding: const EdgeInsets.all(1),
@@ -45,19 +42,19 @@ class ProductCardsVertical extends StatelessWidget {
               height: AppSizes.h_180,
               padding: const EdgeInsets.all(AppSizes.sm),
               backgroundColor: dark ? ColorManager.dark : ColorManager.light,
-              widget: Stack(
+              widget: const Stack(
                 children: [
                   // Image
                   RoundedImageContainer(
-                    image: image,
+                    image: ImageManager.productImage1,
                     fit: BoxFit.contain,
                   ),
 
                   // Sale Tag
-                  SaleTag(saleNumber: saleNumber),
+                  SaleTag(saleNumber: TextManager.sale_25),
 
                   // Favourite Icon Button
-                  const Positioned(
+                  Positioned(
                       top: 0,
                       right: 0,
                       child: CircularIcon(

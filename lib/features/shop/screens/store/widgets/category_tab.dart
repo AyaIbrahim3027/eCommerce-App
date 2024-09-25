@@ -39,9 +39,7 @@ class CategoryTab extends StatelessWidget {
 
               GridLayout(
                 itemCount: 4,
-                itemBuilder: (_, index) => const ProductCardsVertical(
-                    image: ImageManager.productImage1,
-                    saleNumber: TextManager.sale_25),
+                itemBuilder: (_, index) => const ProductCardsVertical(),
               ),
             ],
           ),
