@@ -6,8 +6,10 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(child: Scaffold(
-      body: SettingsScreenBodyWidget(),
-    ),);
+    return const SafeArea(
+      child: Scaffold(
+        body: SettingsScreenBodyWidget(),
+      ),
+    );
   }
 }

@@ -8,8 +8,10 @@ import 'package:iconsax/iconsax.dart';
 
 class UserProfileTile extends StatelessWidget {
   const UserProfileTile({
-    super.key,
+    super.key, required this.onPressed,
   });
+
+  final void Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class UserProfileTile extends StatelessWidget {
             ),
       ),
       trailing: IconButton(
-          onPressed: () {},
+          onPressed: onPressed,
           icon: const Icon(
             Iconsax.edit,
             color: ColorManager.white,

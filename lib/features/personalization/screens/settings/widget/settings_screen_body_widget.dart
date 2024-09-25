@@ -3,10 +3,12 @@ import 'package:ecommerce_app/common/widgets/custom_shapes/containers/header_con
 import 'package:ecommerce_app/common/widgets/section_heading.dart';
 import 'package:ecommerce_app/common/widgets/settings_menu_tile.dart';
 import 'package:ecommerce_app/common/widgets/user_profile_tile.dart';
+import 'package:ecommerce_app/features/personalization/screens/profile/profile_screen.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingsScreenBodyWidget extends StatelessWidget {
@@ -32,7 +34,7 @@ class SettingsScreenBodyWidget extends StatelessWidget {
               ),
 
               // User Profile Card
-              const UserProfileTile(),
+               UserProfileTile(onPressed:()=>Get.to(()=> const ProfileScreen())),
               const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),

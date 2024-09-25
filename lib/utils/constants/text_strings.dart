@@ -82,6 +82,7 @@ class TextManager {
   static const String account = "Account";
   static const String accountSettings = "Account Settings";
   static const String userName = "User Name";
+  static const String changePic = "Change Profile Picture";
   static const String accountSettingsTitle1 = "My Addresses";
   static const String accountSettingsTitle2 = "My Card";
   static const String accountSettingsTitle3 = "My Orders";
