@@ -161,4 +161,9 @@ class TextManager {
   // Price
   static const String price_250 = "\$250";
   static const String price_175 = "175";
+
+  // Product title
+  static const String productTitle = "Nike Sports Shoes";
+  static const String status = "Status";
+  static const String inStock = "In Stock";
 }
