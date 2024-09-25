@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/common/widgets/appbar.dart';
+import 'package:ecommerce_app/common/widgets/circular_icon.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/curved_edges_widget.dart';
 import 'package:ecommerce_app/common/widgets/rounded_image_container.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
@@ -5,6 +7,7 @@ import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class ProductDetailsScreenBodyWidget extends StatelessWidget {
   const ProductDetailsScreenBodyWidget({super.key});
@@ -59,6 +62,17 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
                             const SizedBox(width: AppSizes.spaceBtwItems),
                       ),
                     ),
+                  ),
+
+                  // Appbar Icons
+                  const CustomAppBar(
+                    showBackArrow: true,
+                    actions: [
+                      CircularIcon(
+                        icon: Iconsax.heart5,
+                        color: ColorManager.red,
+                      ),
+                    ],
                   ),
                 ],
               ),
