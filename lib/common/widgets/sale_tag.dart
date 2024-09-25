@@ -12,18 +12,15 @@ class SaleTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: 12,
-      child: RoundedContainer(
-        radius: AppSizes.sm,
-        backgroundColor: ColorManager.secondaryColor
-            .withOpacity(OpacityManager.op_0_8),
-        padding: const EdgeInsets.symmetric(
-            horizontal: AppSizes.sm, vertical: AppSizes.xs),
-        widget: Text(
-          saleNumber,
-          style: Theme.of(context).textTheme.labelLarge,
-        ),
+    return RoundedContainer(
+      radius: AppSizes.sm,
+      backgroundColor: ColorManager.secondaryColor
+          .withOpacity(OpacityManager.op_0_8),
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSizes.sm, vertical: AppSizes.xs),
+      widget: Text(
+        saleNumber,
+        style: Theme.of(context).textTheme.labelLarge,
       ),
     );
   }

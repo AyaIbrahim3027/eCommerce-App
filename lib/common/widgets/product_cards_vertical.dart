@@ -51,7 +51,9 @@ class ProductCardsVertical extends StatelessWidget {
                   ),
 
                   // Sale Tag
-                  SaleTag(saleNumber: TextManager.sale_25),
+                  Positioned(
+                      top: 12,
+                      child: SaleTag(saleNumber: TextManager.sale_25)),
 
                   // Favourite Icon Button
                   Positioned(
