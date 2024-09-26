@@ -174,4 +174,13 @@ class TextManager {
   static const String price = "Price : ";
   static const String stock = "Stock : ";
   static const String variationDesc = "This is the description of the product and it can go upto max 4 lines.";
+  static const String colors = "Colors";
+  static const String green = "Green";
+  static const String blue = "Blue";
+  static const String yellow = "Yellow";
+  static const String size = "Size";
+  static const String eu_34 = "EU 34";
+  static const String eu_36 = "EU 36";
+  static const String eu_38 = "EU 38";
+
 }
