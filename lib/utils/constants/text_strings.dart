@@ -170,11 +170,12 @@ class TextManager {
   static const String status = "Status";
   static const String inStock = "In Stock";
 
- // Product Attributes
+  // Product Attributes
   static const String variation = "Variation";
   static const String price = "Price : ";
   static const String stock = "Stock : ";
-  static const String variationDesc = "This is the description of the product and it can go upto max 4 lines.";
+  static const String variationDesc =
+      "This is the description of the product and it can go upto max 4 lines.";
   static const String colors = "Colors";
   static const String green = "Green";
   static const String blue = "Blue";
@@ -184,4 +185,9 @@ class TextManager {
   static const String eu_36 = "EU 36";
   static const String eu_38 = "EU 38";
 
+  // Description
+  static const String description = "Description";
+  static const String descriptionTxt = "This is a product description for black Nike shoes. There are more things that can be added but i am just practicing and nothing else.";
+  static const String showMore = "Show more";
+  static const String less = "Less";
 }
