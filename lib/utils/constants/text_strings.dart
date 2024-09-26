@@ -158,6 +158,12 @@ class TextManager {
 
   // Rating
   static const String rate_0_5 = "0.5";
+  static const String rate_4_8 = "4.8";
+  static const String rate_5 = "5";
+  static const String rate_4 = "4";
+  static const String rate_3 = "3";
+  static const String rate_2 = "2";
+  static const String rate_1 = "1";
   static const String rateNo_0_5 = "(200)";
 
   // Price
@@ -196,4 +202,6 @@ class TextManager {
   // Reviews
   static const String reviews = "Reviews(200)";
   static const String reviewsAndRatings = "Reviews And Ratings";
+  static const String reviewsAndRatingsTxt =
+      "Ratings and reviews are verified and are from people who use the same type of device that you use.";
 }

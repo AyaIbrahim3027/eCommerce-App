@@ -76,7 +76,9 @@ class AppSizes {
   static const double w_80 = 80.0;
 
   // Size box different values
+  static const double r_7 = 7.0;
   static const double w_8 = 8.0;
+  static const double h_11 = 11.0;
   static const double w_18 = 18.0;
   static const double h_18 = 18.0;
   static const double h_24 = 24.0;
@@ -104,6 +106,15 @@ class AppSizes {
 
   // Icons Size
   static const double s_18 = 18.0;
+  static const double s_20 = 20.0;
   static const double s_24 = 24.0;
   static const double s_28 = 28.0;
+
+  // Linear Progress Indicator Values
+  static const double lPIV_0_2 = 0.2;
+  static const double lPIV_0_4 = 0.4;
+  static const double lPIV_0_6 = 0.6;
+  static const double lPIV_0_5 = 0.5;
+  static const double lPIV_0_8 = 0.8;
+  static const double lPIV_1 = 1;
 }
