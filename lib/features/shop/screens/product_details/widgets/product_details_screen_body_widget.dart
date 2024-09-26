@@ -7,6 +7,7 @@ import 'package:ecommerce_app/features/shop/screens/product_details/widgets/rati
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 class ProductDetailsScreenBodyWidget extends StatelessWidget {
@@ -63,9 +64,21 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
                   lessStyle:
                       TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                 ),
-                const SizedBox(height: AppSizes.spaceBtwSections),
 
                 // Reviews
+                const Divider(),
+                const SizedBox(height: AppSizes.spaceBtwItems),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const SectionHeading(
+                        title: TextManager.reviews, showActionButton: false),
+                    IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Iconsax.arrow_right_3))
+                  ],
+                ),
+                const SizedBox(height: AppSizes.spaceBtwSections),
               ],
             ),
           ),

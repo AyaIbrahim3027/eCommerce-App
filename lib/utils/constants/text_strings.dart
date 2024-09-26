@@ -145,6 +145,7 @@ class TextManager {
   static const String done = "Done";
   static const String closeAccount = "Close Account";
   static const String checkout = "Checkout";
+  static const String addToCart = "Add To Cart";
 
   // Navigation Labels
   static const String home = "Home";
@@ -187,7 +188,11 @@ class TextManager {
 
   // Description
   static const String description = "Description";
-  static const String descriptionTxt = "This is a product description for black Nike shoes. There are more things that can be added but i am just practicing and nothing else.";
+  static const String descriptionTxt =
+      "This is a product description for black Nike shoes. There are more things that can be added but i am just practicing and nothing else.";
   static const String showMore = "Show more";
   static const String less = "Less";
+
+  // Reviews
+  static const String reviews = "Reviews(200)";
 }
