@@ -144,6 +144,7 @@ class TextManager {
   static const String submit = "Submit";
   static const String done = "Done";
   static const String closeAccount = "Close Account";
+  static const String checkout = "Checkout";
 
   // Navigation Labels
   static const String home = "Home";
