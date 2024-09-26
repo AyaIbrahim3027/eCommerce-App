@@ -195,4 +195,5 @@ class TextManager {
 
   // Reviews
   static const String reviews = "Reviews(200)";
+  static const String reviewsAndRatings = "Reviews And Ratings";
 }
