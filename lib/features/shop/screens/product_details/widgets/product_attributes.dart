@@ -41,21 +41,6 @@ class ProductAttributes extends StatelessWidget {
                   selected: false,
                   onSelected: (value) {},
                 ),
-                ChoiceChipWidget(
-                  text: TextManager.green,
-                  selected: true,
-                  onSelected: (value) {},
-                ),
-                ChoiceChipWidget(
-                  text: TextManager.blue,
-                  selected: false,
-                  onSelected: (value) {},
-                ),
-                ChoiceChipWidget(
-                  text: TextManager.yellow,
-                  selected: false,
-                  onSelected: (value) {},
-                ),
               ],
             ),
           ],

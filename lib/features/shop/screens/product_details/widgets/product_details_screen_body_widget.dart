@@ -36,6 +36,7 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
 
                 // Checkout
 
+
                 // Desc
 
                 // Reviews
