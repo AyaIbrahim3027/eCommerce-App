@@ -8,15 +8,14 @@ class ProductReviewsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
         child: Scaffold(
       appBar: CustomAppBar(
-        showBackArrow: true,
+          showBackArrow: true,
           title: Text(
-        TextManager.reviewsAndRatings,
-        style: Theme.of(context).textTheme.headlineMedium,
-      )),
-      body: const ProductReviewsBodyWidget(),
+            TextManager.reviewsAndRatings,
+          )),
+      body: ProductReviewsBodyWidget(),
     ));
   }
 }

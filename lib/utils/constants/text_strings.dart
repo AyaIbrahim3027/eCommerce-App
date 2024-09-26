@@ -204,4 +204,10 @@ class TextManager {
   static const String reviewsAndRatings = "Reviews And Ratings";
   static const String reviewsAndRatingsTxt =
       "Ratings and reviews are verified and are from people who use the same type of device that you use.";
+
+  static const String reviewsTxt =
+      "The user interface of the app is quite intuitive. I was able to navigate and make purchases seamlessly. Great job! ";
+
+  // Company
+  static const String companyName = "Store";
 }
