@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_data.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_image_slider.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/rating_and_share.dart';
@@ -31,6 +32,7 @@ class ProductDetailsScreenBodyWidget extends StatelessWidget {
                 ProductData(),
 
                 // Attributes
+                ProductAttributes(),
 
                 // Checkout
 

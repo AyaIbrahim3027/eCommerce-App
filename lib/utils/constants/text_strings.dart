@@ -161,9 +161,17 @@ class TextManager {
   // Price
   static const String price_250 = "\$250";
   static const String price_175 = "175";
+  static const String price_20 = "20";
+  static const String price_25 = "25";
 
   // Product title
   static const String productTitle = "Nike Sports Shoes";
   static const String status = "Status";
   static const String inStock = "In Stock";
+
+ // Product Attributes
+  static const String variation = "Variation";
+  static const String price = "Price : ";
+  static const String stock = "Stock : ";
+  static const String variationDesc = "This is the description of the product and it can go upto max 4 lines.";
 }
