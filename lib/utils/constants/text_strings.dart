@@ -210,4 +210,7 @@ class TextManager {
 
   // Company
   static const String companyName = "Store";
+
+  // Cart
+  static const String cart = "Cart";
 }
