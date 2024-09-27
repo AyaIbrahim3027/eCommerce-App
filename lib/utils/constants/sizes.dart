@@ -74,6 +74,7 @@ class AppSizes {
   static const double h_50 = 50.0;
   static const double w_60 = 60.0;
   static const double h_60 = 60.0;
+  static const double w_70 = 70.0;
   static const double w_80 = 80.0;
   static const double h_150 = 150.0;
 

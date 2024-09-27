@@ -168,6 +168,7 @@ class TextManager {
 
   // Price
   static const String price_250 = "\$250";
+  static const String price_256 = "256";
   static const String price_175 = "175";
   static const String price_20 = "20";
   static const String price_25 = "25";

@@ -12,8 +12,10 @@ class CartScreen extends StatelessWidget {
       child: Scaffold(
         appBar: CustomAppBar(
           showBackArrow: true,
-          title: Text(TextManager.cart,
-          style: Theme.of(context).textTheme.headlineSmall,),
+          title: Text(
+            TextManager.cart,
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
         ),
         body: const CartScreenBodyWidget(),
       ),

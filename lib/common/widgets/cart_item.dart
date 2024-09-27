@@ -28,7 +28,7 @@ class CartItem extends StatelessWidget {
           backgroundColor: dark ? ColorManager.darkerGrey : ColorManager.light,
         ),
 
-        const SizedBox(height: AppSizes.spaceBtwItems),
+        const SizedBox(width: AppSizes.spaceBtwItems),
 
         // Title , Price , Size
         Expanded(

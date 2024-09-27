@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/common/widgets/cart_item.dart';
+import 'package:ecommerce_app/features/shop/screens/cart/widgets/cart_card.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +7,6 @@ class CartScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(AppSizes.defaultSpace),
@@ -17,14 +16,9 @@ class CartScreenBodyWidget extends StatelessWidget {
             height: AppSizes.spaceBtwSections,
           ),
           itemCount: 4,
-          itemBuilder: (_, index) => const Column(
-            children: [
-              CartItem(),
-            ],
-          ),
+          itemBuilder: (_, index) => const CartCard(),
         ),
       ),
     );
   }
 }
-
