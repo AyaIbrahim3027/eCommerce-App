@@ -184,6 +184,7 @@ class TextManager {
   static const String variationDesc =
       "This is the description of the product and it can go upto max 4 lines.";
   static const String colors = "Colors";
+  static const String color = "Color";
   static const String green = "Green";
   static const String blue = "Blue";
   static const String yellow = "Yellow";
@@ -191,6 +192,7 @@ class TextManager {
   static const String eu_34 = "EU 34";
   static const String eu_36 = "EU 36";
   static const String eu_38 = "EU 38";
+  static const String uk_08 = "UK 08";
 
   // Description
   static const String description = "Description";
@@ -213,4 +215,5 @@ class TextManager {
 
   // Cart
   static const String cart = "Cart";
+  static const String productTitleTxt = "Black Sports Shoes";
 }
