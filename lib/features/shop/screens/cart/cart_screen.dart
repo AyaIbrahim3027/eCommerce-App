@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widgets/appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/cart/widgets/cart_screen_body_widget.dart';
+import 'package:ecommerce_app/features/shop/screens/cart/widgets/checkout_button.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,9 @@ class CartScreen extends StatelessWidget {
           ),
         ),
         body: const CartScreenBodyWidget(),
+        bottomNavigationBar: const CheckoutButton(),
       ),
     );
   }
 }
+

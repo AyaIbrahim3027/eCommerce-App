@@ -7,17 +7,15 @@ class CartScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.all(AppSizes.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-          separatorBuilder: (_, __) => const SizedBox(
-            height: AppSizes.spaceBtwSections,
-          ),
-          itemCount: 4,
-          itemBuilder: (_, index) => const CartCard(),
+    return Padding(
+      padding: const EdgeInsets.all(AppSizes.defaultSpace),
+      child: ListView.separated(
+        shrinkWrap: true,
+        separatorBuilder: (_, __) => const SizedBox(
+          height: AppSizes.spaceBtwSections,
         ),
+        itemCount: 10,
+        itemBuilder: (_, index) => const CartCard(),
       ),
     );
   }
