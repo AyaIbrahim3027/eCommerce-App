@@ -1,5 +1,10 @@
+import 'package:ecommerce_app/common/widgets/rounded_container.dart';
+import 'package:ecommerce_app/common/widgets/section_heading.dart';
+import 'package:ecommerce_app/utils/constants/colors.dart';
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
+import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class BillingPaymentSection extends StatelessWidget {
@@ -7,69 +12,32 @@ class BillingPaymentSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = HelperFunctions.isDarkMode(context);
+
     return Column(
       children: [
-        // SubTotal
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              TextManager.subTotal,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            Text(
-              TextManager.price_250,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-          ],
+        SectionHeading(
+          title: TextManager.paymentMethod,
+          buttonText: TextManager.change,
+          onPressed: () {},
         ),
-        const SizedBox(height: AppSizes.sm),
-
-        // Shipping Fee
+        const SizedBox(height: AppSizes.spaceBtwItems / 2),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              TextManager.shippingFee,
-              style: Theme.of(context).textTheme.bodyMedium,
+            RoundedContainer(
+              width: AppSizes.w_60,
+              height: AppSizes.h_40,
+              backgroundColor: dark ? ColorManager.light : ColorManager.white,
+              padding: const EdgeInsets.all(AppSizes.sm),
+              widget: const Image(
+                image: AssetImage(ImageManager.paypal),
+                fit: BoxFit.contain,
+              ),
             ),
+            const SizedBox(width: AppSizes.spaceBtwItems / 2),
             Text(
-              TextManager.shippingFeePrice,
-              style: Theme.of(context).textTheme.labelLarge,
-            ),
-          ],
-        ),
-
-        const SizedBox(height: AppSizes.sm),
-
-        // Tax Fee
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              TextManager.taxFee,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            Text(
-              TextManager.taxFeePrice,
-              style: Theme.of(context).textTheme.labelLarge,
-            ),
-          ],
-        ),
-
-        const SizedBox(height: AppSizes.sm),
-
-        // Order Total
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              TextManager.orderTotal,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            Text(
-              TextManager.orderTotalPrice,
-              style: Theme.of(context).textTheme.titleMedium,
+              TextManager.payPal,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ],
         ),

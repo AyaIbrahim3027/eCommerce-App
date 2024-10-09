@@ -1,6 +1,8 @@
 import 'package:ecommerce_app/common/widgets/coupon_code.dart';
 import 'package:ecommerce_app/common/widgets/rounded_container.dart';
 import 'package:ecommerce_app/features/shop/screens/cart/widgets/cart_screen_body_widget.dart';
+import 'package:ecommerce_app/features/shop/screens/checkout/widgets/billing_address_section.dart';
+import 'package:ecommerce_app/features/shop/screens/checkout/widgets/billing_amount_section.dart';
 import 'package:ecommerce_app/features/shop/screens/checkout/widgets/billing_payment_section.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
@@ -35,7 +37,7 @@ class CheckoutScreenBodyWidget extends StatelessWidget {
               widget: const Column(
                 children: [
                   // price
-                  BillingPaymentSection(),
+                  BillingAmountSection(),
                   SizedBox(height: AppSizes.spaceBtwItems),
 
                   // divider
@@ -43,7 +45,12 @@ class CheckoutScreenBodyWidget extends StatelessWidget {
                   SizedBox(height: AppSizes.spaceBtwItems),
 
                   // payment methods
+                  BillingPaymentSection(),
+                  SizedBox(height: AppSizes.spaceBtwItems),
+
                   // address
+                  BillingAddressSection(),
+                  SizedBox(height: AppSizes.spaceBtwItems),
                 ],
               ),
             ),

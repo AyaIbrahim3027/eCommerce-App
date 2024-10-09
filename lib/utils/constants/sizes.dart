@@ -70,6 +70,7 @@ class AppSizes {
   // Image Height & width
   static const double w_32 = 32.0;
   static const double h_32 = 32.0;
+  static const double h_35 = 35.0;
   static const double w_50 = 50.0;
   static const double h_50 = 50.0;
   static const double w_60 = 60.0;
@@ -109,6 +110,7 @@ class AppSizes {
   static const double sR_7 = 7.0;
 
   // Icons Size
+  static const double s_16 = 16.0;
   static const double s_18 = 18.0;
   static const double s_20 = 20.0;
   static const double s_24 = 24.0;

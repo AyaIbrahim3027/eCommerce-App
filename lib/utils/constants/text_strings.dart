@@ -229,4 +229,11 @@ class TextManager {
   static const String taxFeePrice = "\$6.0";
   static const String orderTotal = "Order Total";
   static const String orderTotalPrice = "\$6.0";
+  static const String paymentMethod = "Payment Method";
+  static const String shippingAddress = "Shipping Address";
+  static const String change = "Change";
+  static const String payPal = "PayPal";
+  static const String address = "South Liana. Maine 11111,USA";
+  static const String paymentSuccess = "Payment Success!";
+  static const String paymentSuccessSubTitle = "Your item will be shipped soon!";
 }
