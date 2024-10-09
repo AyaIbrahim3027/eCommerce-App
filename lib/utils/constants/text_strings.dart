@@ -222,4 +222,11 @@ class TextManager {
   static const String orderReview = "Order Review";
   static const String promoCode = "Have a promo code? Enter here";
   static const String apply = "Apply";
+  static const String subTotal = "SubTotal";
+  static const String shippingFee = "Shipping Fee";
+  static const String shippingFeePrice = "\$6.0";
+  static const String taxFee = "Tax Fee";
+  static const String taxFeePrice = "\$6.0";
+  static const String orderTotal = "Order Total";
+  static const String orderTotalPrice = "\$6.0";
 }
