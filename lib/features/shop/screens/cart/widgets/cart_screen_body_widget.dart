@@ -3,7 +3,12 @@ import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CartScreenBodyWidget extends StatelessWidget {
-  const CartScreenBodyWidget({super.key});
+  const CartScreenBodyWidget({
+    super.key,
+    this.showAddRemoveButtons = true,
+  });
+
+  final bool showAddRemoveButtons;
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +19,10 @@ class CartScreenBodyWidget extends StatelessWidget {
         separatorBuilder: (_, __) => const SizedBox(
           height: AppSizes.spaceBtwSections,
         ),
-        itemCount: 10,
-        itemBuilder: (_, index) => const CartCardItems(),
+        itemCount: 3,
+        itemBuilder: (_, index) => CartCardItems(
+          showAddRemoveButtons: showAddRemoveButtons,
+        ),
       ),
     );
   }
