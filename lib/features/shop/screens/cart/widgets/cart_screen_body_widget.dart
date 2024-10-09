@@ -15,7 +15,7 @@ class CartScreenBodyWidget extends StatelessWidget {
           height: AppSizes.spaceBtwSections,
         ),
         itemCount: 10,
-        itemBuilder: (_, index) => const CartCard(),
+        itemBuilder: (_, index) => const CartCardItems(),
       ),
     );
   }

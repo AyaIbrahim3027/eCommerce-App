@@ -5,30 +5,35 @@ import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
-class CartCard extends StatelessWidget {
-  const CartCard({
+class CartCardItems extends StatelessWidget {
+  const CartCardItems({
     super.key,
+    this.showAddRemoveButtons = true,
   });
+
+  final bool showAddRemoveButtons;
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CartItem(),
-        SizedBox(height: AppSizes.spaceBtwItems),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              children: [
-                SizedBox(width: AppSizes.w_70),
-                // Add Remove Button
-                ProductQuantityWithAddRemoveButton(),
-              ],
-            ),
-            ProductPriceText(price: TextManager.price_256),
-          ],
-        ),
+        const CartItem(),
+        if (showAddRemoveButtons)
+          const SizedBox(height: AppSizes.spaceBtwItems),
+        if (showAddRemoveButtons)
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  SizedBox(width: AppSizes.w_70),
+                  // Add Remove Button
+                  ProductQuantityWithAddRemoveButton(),
+                ],
+              ),
+              ProductPriceText(price: TextManager.price_256),
+            ],
+          ),
       ],
     );
   }
