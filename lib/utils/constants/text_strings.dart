@@ -217,4 +217,7 @@ class TextManager {
   // Cart
   static const String cart = "Cart";
   static const String productTitleTxt = "Black Sports Shoes";
+
+  // Checkout
+  static const String orderReview = "Order Review";
 }
