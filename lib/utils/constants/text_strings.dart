@@ -221,4 +221,5 @@ class TextManager {
   // Checkout
   static const String orderReview = "Order Review";
   static const String promoCode = "Have a promo code? Enter here";
+  static const String apply = "Apply";
 }
