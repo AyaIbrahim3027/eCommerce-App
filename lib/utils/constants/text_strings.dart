@@ -235,9 +235,17 @@ class TextManager {
   static const String payPal = "PayPal";
   static const String address = "South Liana. Maine 11111,USA";
   static const String paymentSuccess = "Payment Success!";
-  static const String paymentSuccessSubTitle = "Your item will be shipped soon!";
+  static const String paymentSuccessSubTitle =
+      "Your item will be shipped soon!";
 
   // sub category
   static const String subCategoryTitle = "Sports Shirts";
   static const String productTitleText = "Black Nike Half Sleeves Shirts";
+
+  // All products
+  static const String higherPrice = "Higher Price";
+  static const String lowerPrice = "Lower Price";
+  static const String sale = "Sale";
+  static const String newest = "Newest";
+  static const String popularity = "Popularity";
 }
