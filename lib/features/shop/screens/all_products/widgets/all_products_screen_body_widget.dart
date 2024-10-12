@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/common/widgets/grid_layout.dart';
+import 'package:ecommerce_app/common/widgets/product_cards_vertical.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -10,12 +12,12 @@ class AllProductsScreenBodyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(AppSizes.defaultSpace),
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
         child: Column(
           children: [
             // Dropdown
             DropdownButtonFormField(
-              decoration: InputDecoration(prefixIcon: Icon(Iconsax.sort)),
+              decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
               onChanged: (value) {},
               items: [
                 TextManager.name,
@@ -24,12 +26,18 @@ class AllProductsScreenBodyWidget extends StatelessWidget {
                 TextManager.sale,
                 TextManager.newest,
                 TextManager.popularity
-              ].map((option) => DropdownMenuItem(
-                  value: option,
-                  child: Text(option))).toList(),
+              ]
+                  .map((option) =>
+                      DropdownMenuItem(value: option, child: Text(option)))
+                  .toList(),
             ),
-            SizedBox(height: AppSizes.spaceBtwSections),
-            
+            const SizedBox(height: AppSizes.spaceBtwSections),
+
+            // Products
+            GridLayout(
+              itemCount: 4,
+              itemBuilder: (_, index) => const ProductCardsVertical(),
+            ),
           ],
         ),
       ),
