@@ -239,4 +239,5 @@ class TextManager {
 
   // sub category
   static const String subCategoryTitle = "Sports Shirts";
+  static const String productTitleText = "Black Nike Half Sleeves Shirts";
 }

@@ -33,7 +33,17 @@ class SubCategoryScreenBodyWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: AppSizes.spaceBtwItems / 2),
 
-                const ProductCardsHorizontal(),
+                SizedBox(
+                  height: AppSizes.h_120,
+                  child: ListView.separated(
+                    itemCount: 4,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) =>
+                        const ProductCardsHorizontal(),
+                    separatorBuilder: (context, index) =>
+                        const SizedBox(width: AppSizes.spaceBtwItems),
+                  ),
+                ),
               ],
             ),
           ],
