@@ -236,4 +236,7 @@ class TextManager {
   static const String address = "South Liana. Maine 11111,USA";
   static const String paymentSuccess = "Payment Success!";
   static const String paymentSuccessSubTitle = "Your item will be shipped soon!";
+
+  // sub category
+  static const String subCategoryTitle = "Sports Shirts";
 }
