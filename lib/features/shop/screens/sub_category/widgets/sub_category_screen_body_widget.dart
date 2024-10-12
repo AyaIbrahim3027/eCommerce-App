@@ -1,6 +1,9 @@
+import 'package:ecommerce_app/common/widgets/product_cards_horizontal.dart';
 import 'package:ecommerce_app/common/widgets/rounded_image_container.dart';
+import 'package:ecommerce_app/common/widgets/section_heading.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
+import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class SubCategoryScreenBodyWidget extends StatelessWidget {
@@ -8,17 +11,31 @@ class SubCategoryScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(AppSizes.defaultSpace),
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
         child: Column(
           children: [
             // Banner
-            RoundedImageContainer(
+            const RoundedImageContainer(
               width: double.infinity,
               image: ImageManager.promoBanner4,
             ),
-            SizedBox(height: AppSizes.spaceBtwSections),
+            const SizedBox(height: AppSizes.spaceBtwSections),
+
+            // Sub Categories
+            Column(
+              children: [
+                // Heading
+                SectionHeading(
+                  title: TextManager.subCategoryTitle,
+                  onPressed: () {},
+                ),
+                const SizedBox(height: AppSizes.spaceBtwItems / 2),
+
+                const ProductCardsHorizontal(),
+              ],
+            ),
           ],
         ),
       ),

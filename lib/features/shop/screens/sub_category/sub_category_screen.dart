@@ -11,7 +11,7 @@ class SubCategoryScreen extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         appBar: CustomAppBar(
-          title: Text(TextManager.subCategoryTitle),
+          title: Text(TextManager.sports),
           showBackArrow: true,
         ),
         body: SubCategoryScreenBodyWidget(),
