@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/common/widgets/brand_card.dart';
+import 'package:ecommerce_app/common/widgets/grid_layout.dart';
 import 'package:ecommerce_app/common/widgets/section_heading.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
@@ -8,17 +10,25 @@ class AllBrandsScreenBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(AppSizes.defaultSpace),
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
         child: Column(
           children: [
             // Heading
-            SectionHeading(
+            const SectionHeading(
               title: TextManager.brands,
               showActionButton: false,
             ),
-            SizedBox(height: AppSizes.spaceBtwItems),
+            const SizedBox(height: AppSizes.spaceBtwItems),
+
+            // Brands
+            GridLayout(
+              itemCount: 10,
+              mainAxisExtent: AppSizes.h_80,
+              itemBuilder: (context, index) =>
+                  const BrandCard(showBorder: true),
+            ),
           ],
         ),
       ),
