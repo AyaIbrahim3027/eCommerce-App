@@ -8,12 +8,15 @@ class BrandProductsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
         appBar: CustomAppBar(
-          title: Text(TextManager.brandName),
+          title: Text(
+            TextManager.brandName,
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
         ),
-        body: BrandProductsScreenBodyWidget(),
+        body: const BrandProductsScreenBodyWidget(),
       ),
     );
   }

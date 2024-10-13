@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/common/widgets/brand_card.dart';
 import 'package:ecommerce_app/common/widgets/grid_layout.dart';
 import 'package:ecommerce_app/common/widgets/section_heading.dart';
-import 'package:ecommerce_app/common/widgets/sortable_products.dart';
+import 'package:ecommerce_app/features/shop/screens/brand/brand_products_screen.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,9 @@ class AllBrandsScreenBodyWidget extends StatelessWidget {
               mainAxisExtent: AppSizes.h_80,
               itemBuilder: (context, index) => BrandCard(
                 showBorder: true,
-                onTap: () => Get.to(() => const SortableProducts()),
+                onTap: () => Get.to(
+                  () => const BrandProductsScreen(),
+                ),
               ),
             ),
           ],
