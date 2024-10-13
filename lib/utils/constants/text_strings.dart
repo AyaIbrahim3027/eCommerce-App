@@ -248,4 +248,8 @@ class TextManager {
   static const String sale = "Sale";
   static const String newest = "Newest";
   static const String popularity = "Popularity";
+
+  // All brands
+  static const String brand = "Brand";
+  static const String brands = "Brands";
 }
