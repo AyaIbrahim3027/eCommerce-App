@@ -51,6 +51,7 @@ class ColorManager {
   static const Color rating = Colors.amber;
   static const Color green = Colors.green;
   static const Color yellow = Colors.yellow;
+  static Color redShade500 = Colors.red.shade500;
 
   // Gradient Colors
   static const Gradient linearGradient = LinearGradient(

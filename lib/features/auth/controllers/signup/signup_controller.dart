@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/network/network_manager.dart';
 import 'package:ecommerce_app/utils/popups/full_screen_loader.dart';
+import 'package:ecommerce_app/utils/popups/loaders.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -32,6 +33,10 @@ class SignupController extends GetxController {
       }
 
       // Form Validation
+      if (!signupFormKey.currentState!.validate()) {
+        FullScreenLoader.stopLoading();
+        return;
+      }
 
       // Check Privacy Policy
 
@@ -41,6 +46,9 @@ class SignupController extends GetxController {
 
       // Show success msg
     } catch (e) {
-    } finally {}
+      Loaders.errorSnackBar(title: 'Oh Snap', message: e.toString());
+    } finally {
+      FullScreenLoader.stopLoading();
+    }
   }
 }
