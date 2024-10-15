@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/binidings/general_bindings.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+      initialBinding: GeneralBindings(),
       home: const Scaffold(
         backgroundColor: ColorManager.primaryColor,
         body: Center(
