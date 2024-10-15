@@ -101,13 +101,22 @@ class SignUpScreenForm extends StatelessWidget {
               ),
 
               // Password
-              TextFormField(
-                controller: controller.password,
-                validator: (value) => AppValidator.validatePassword(value),
-                decoration: const InputDecoration(
-                  prefixIcon: Icon(Iconsax.password_check),
-                  labelText: TextManager.password,
-                  suffixIcon: Icon(Iconsax.eye_slash),
+              Obx(
+                () => TextFormField(
+                  controller: controller.password,
+                  validator: (value) => AppValidator.validatePassword(value),
+                  obscureText: controller.hidePassword.value,
+                  decoration: InputDecoration(
+                    prefixIcon: const Icon(Iconsax.password_check),
+                    labelText: TextManager.password,
+                    suffixIcon: IconButton(
+                      onPressed: () => controller.hidePassword.value =
+                          !controller.hidePassword.value,
+                      icon: Icon(controller.hidePassword.value
+                          ? Iconsax.eye_slash
+                          : Iconsax.eye),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
