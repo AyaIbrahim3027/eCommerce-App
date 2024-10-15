@@ -8,20 +8,23 @@ class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();
 
   final Connectivity _connectivity = Connectivity();
-  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+  late StreamSubscription _connectivitySubscription;
   final Rx<ConnectivityResult> _connectionStatus = ConnectivityResult.none.obs;
 
-  // Initialize the network manager and set up a stream to continually check the connection status.
   @override
   void onInit() {
     super.onInit();
-    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(
-            _updateConnectionStatus as void Function(
-                List<ConnectivityResult> event)?)
-        as StreamSubscription<ConnectivityResult>;
+    // Listen for changes in the connection status
+    _connectivitySubscription =
+        _connectivity.onConnectivityChanged.listen((results) {
+      // Assuming results is a List<ConnectivityResult>
+      for (var result in results) {
+        _updateConnectionStatus(result);
+      }
+    });
   }
 
-  // Update the connection status based on changes in connectivity and show a relevant popup for no internet connection.
+  // Update the connection status and show a warning if there's no internet.
   Future<void> _updateConnectionStatus(ConnectivityResult result) async {
     _connectionStatus.value = result;
     if (_connectionStatus.value == ConnectivityResult.none) {
@@ -32,11 +35,7 @@ class NetworkManager extends GetxController {
   Future<bool> isConnected() async {
     try {
       final result = await _connectivity.checkConnectivity();
-      if (result == ConnectivityResult.none) {
-        return false;
-      } else {
-        return true;
-      }
+      return result != ConnectivityResult.none;
     } on PlatformException catch (_) {
       return false;
     }
@@ -45,6 +44,7 @@ class NetworkManager extends GetxController {
   @override
   void onClose() {
     super.onClose();
+    // Cancel the subscription to avoid memory leaks.
     _connectivitySubscription.cancel();
   }
 }
