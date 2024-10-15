@@ -36,6 +36,14 @@ class SignupController extends GetxController {
       if (!signupFormKey.currentState!.validate()) return;
 
       // Check Privacy Policy
+      if (!privacyPolicy.value) {
+        Loaders.warningSnackBar(
+          title: 'Accept Privacy Policy',
+          message:
+              'In order to create account, you must have to read and accept the privacy policy & terms of use.',
+        );
+        return;
+      }
 
       // Register user in firebase auth. & save user data in the firebase
 
