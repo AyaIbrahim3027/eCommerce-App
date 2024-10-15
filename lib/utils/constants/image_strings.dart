@@ -95,9 +95,17 @@ class ImageManager {
 
   // Payment Methods
   static const String paypal = "assets/icons/payment_methods/paypal_888870.png";
-  static const String applePay = "assets/icons/payment_methods/apple-pay_5968500.png";
-  static const String googlePay = "assets/icons/payment_methods/google-pay_6124998.png";
-  static const String creditCard = "assets/icons/payment_methods/atm-card_8983163.png";
-  static const String masterCard = "assets/icons/payment_methods/business_15801125.png";
-  static const String successfulPaymentIcon = "assets/icons/payment_methods/right_14984943.png";
+  static const String applePay =
+      "assets/icons/payment_methods/apple-pay_5968500.png";
+  static const String googlePay =
+      "assets/icons/payment_methods/google-pay_6124998.png";
+  static const String creditCard =
+      "assets/icons/payment_methods/atm-card_8983163.png";
+  static const String masterCard =
+      "assets/icons/payment_methods/business_15801125.png";
+  static const String successfulPaymentIcon =
+      "assets/icons/payment_methods/right_14984943.png";
+
+  // Animation
+  static const String loading = 'assets/images/animations/Loading.gif';
 }
