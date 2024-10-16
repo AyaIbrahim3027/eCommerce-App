@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ecommerce_app/data/models/user_model.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 class UserRepository extends GetxController{
@@ -13,7 +14,12 @@ class UserRepository extends GetxController{
       await _db.collection('Users').doc(user.id).set(user.toJson());
     } on FirebaseException catch (e){
       throw FirebaseException(plugin: e.toString());
+    } on FormatException catch (_){
+      throw const FormatException();
+    } on PlatformException catch (e){
+      throw PlatformException(code: e.toString());
+    }catch(_){
+      throw 'Something went wrong. Please try again';
     }
-    // }catch(e){}
   }
 }

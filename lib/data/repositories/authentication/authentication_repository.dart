@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/features/auth/screens/login/login_screen.dart';
 import 'package:ecommerce_app/features/auth/screens/onboarding/onboarding_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -30,15 +31,22 @@ class AuthenticationRepository extends GetxController {
 
   // Email & Password Sign in:
 
- // Email Register
- Future<UserCredential> registerWithEmailAndPassword(String email , String password) async{
+  // Email Register
+  Future<UserCredential> registerWithEmailAndPassword(
+      String email, String password) async {
     try {
       return await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
-    } on FirebaseAuthException catch (e){
+    } on FirebaseAuthException catch (e) {
       throw FirebaseAuthException(code: e.toString());
+    } on FirebaseException catch (e) {
+      throw FirebaseException(plugin: e.toString());
+    } on FormatException catch (_) {
+      throw const FormatException();
+    } on PlatformException catch (e) {
+      throw PlatformException(code: e.toString());
+    } catch (e) {
+      throw 'Something went wrong. Please try again';
     }
-    // }catch(e){}
- }
-
+  }
 }

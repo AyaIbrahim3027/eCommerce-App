@@ -85,9 +85,10 @@ class SignupController extends GetxController {
       Get.to(() => const VerifyEmailScreen());
 
     } catch (e) {
-      Loaders.errorSnackBar(title: 'Oh Snap', message: e.toString());
-    } finally {
+      // remove Loader
       FullScreenLoader.stopLoading();
+
+      Loaders.errorSnackBar(title: 'Oh Snap', message: e.toString());
     }
   }
 }

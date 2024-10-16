@@ -27,7 +27,7 @@ class AppValidator {
 
     // check for minimum password length
     if (value.length < 6) {
-      return 'Password must be at least 6 character long,';
+      return 'Password must be at least 6 character long.';
     }
 
     // Check for uppercase letters
@@ -36,7 +36,7 @@ class AppValidator {
     }
 
     // Check for numbers
-    if (!value.contains(RegExp(r' [0-9]'))) {
+    if (!value.contains(RegExp(r'[0-9]'))) {
       return 'Password must contain at least one number.';
     }
 
@@ -53,9 +53,9 @@ class AppValidator {
     }
 
     // Regular expression for phone number validation (assuming a 10-digit US phone number format)
-    final phoneRegExp = RegExp(r'^\d{10}$');
+    final phoneRegExp = RegExp(r'^\+20\d{10}$');
     if (!phoneRegExp.hasMatch(value)) {
-      return 'Invalid phone number format (18 digits required).';
+      return 'Invalid phone number format (11 digits required).';
     }
     return null;
   }
